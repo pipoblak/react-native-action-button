@@ -113,7 +113,6 @@ export default class ActionButton extends Component {
                 inputRange: [0, 1],
                 outputRange: [0, this.props.bgOpacity]
               }),
-              ...this.props.buttonStyle,
             }
           ]}
         >
@@ -179,7 +178,8 @@ export default class ActionButton extends Component {
       height: this.props.size,
       borderRadius: this.props.size / 2,
       alignItems: "center",
-      justifyContent: "center"
+      justifyContent: "center",
+      ...this.props.buttonStyle,
     };
 
     const Touchable = getTouchableComponent(this.props.useNativeFeedback);
