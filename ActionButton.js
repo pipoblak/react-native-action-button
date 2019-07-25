@@ -170,7 +170,8 @@ export default class ActionButton extends Component {
       }),
       width: this.props.size,
       height: this.props.size,
-      borderRadius: this.props.size / 2
+      borderRadius: this.props.size / 2,
+      ...this.props.buttonWrapperStyle,
     };
 
     const buttonStyle = {
