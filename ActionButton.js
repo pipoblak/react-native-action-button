@@ -112,7 +112,8 @@ export default class ActionButton extends Component {
               opacity: this.anim.interpolate({
                 inputRange: [0, 1],
                 outputRange: [0, this.props.bgOpacity]
-              })
+              }),
+              ...this.props.buttonStyle,
             }
           ]}
         >
